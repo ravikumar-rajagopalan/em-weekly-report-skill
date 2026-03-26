@@ -1,0 +1,64 @@
+# =============================================================================
+# EM Weekly Report — Team Configuration
+# =============================================================================
+#
+# Copy this file to `team-config.yaml` and fill in your team's details.
+# Run `/setup` in Claude Code for an interactive walkthrough.
+#
+# Required: team, slack.members, slack.channels
+# Optional: slack.workstreams, report customization
+# =============================================================================
+
+# ---------------------------------------------------------------------------
+# Team Identity
+# ---------------------------------------------------------------------------
+team:
+  name: "Checkout"                         # Your team/pod name (used in report title)
+  em_name: "Rizwanul Haque"               # Your name (Engineering Manager)
+
+# ---------------------------------------------------------------------------
+# Slack — team members and channels to scan
+# ---------------------------------------------------------------------------
+slack:
+  # Direct reports and key contributors.
+  # To find a Slack ID: click a person's profile → "⋮" menu → "Copy member ID"
+  members:
+    - name: "Alice Engineer"
+      slack_id: "U0XXXXXX1"
+    - name: "Bob Developer"
+      slack_id: "U0XXXXXX2"
+    # Add more team members...
+
+  # Channels to scan for team-relevant activity.
+  # To find a channel ID: right-click channel name → "View channel details" → scroll to bottom
+  channels:
+    - name: "#checkout-core"
+      id: "C0XXXXXX1"
+    - name: "#checkout-standup"
+      id: "C0XXXXXX2"
+    # Add more channels...
+
+  # Active workstreams — guides how highlights are grouped in the report.
+  # Claude uses these as themes when categorizing Slack messages.
+  workstreams:
+    - "Standard Checkout redesign"
+    - "Payment Links 2.0"
+    - "1CC consumer app"
+    # Add your team's current focus areas...
+
+# ---------------------------------------------------------------------------
+# Report — output customization
+# ---------------------------------------------------------------------------
+report:
+  # Sections to include. Remove any you don't need.
+  sections:
+    - highlights                           # Key achievements and progress
+    - callouts                             # Blockers, risks, help needed
+    - media_links                          # Loom, Figma, PR links collected from Slack
+
+  # Writing style for the generated report.
+  tone: "confident but not boastful"
+
+  # Where to save the generated markdown report.
+  # {start_date} and {end_date} are replaced with YYYY-MM-DD values.
+  output_dir: "output/{start_date}_to_{end_date}"

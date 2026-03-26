@@ -1,0 +1,62 @@
+# =============================================================================
+# Frontend Platform Team — Weekly Report Configuration
+# =============================================================================
+# Reference example from the team that built this skill.
+# Copy to team-config.yaml in your project root and replace with your values.
+
+team:
+  name: "Frontend Platform"
+  em_name: "Ravikumar Rajagopalan"
+
+slack:
+  members:
+    - name: "Anurag Hazra"
+      slack_id: "U02B9AGFJUB"
+    - name: "Ashutosh Gupta"
+      slack_id: "U08RYEC0JF4"
+    - name: "Gaurav Tewari"
+      slack_id: "U07NXB7ACSE"
+    - name: "Harsh Karande"
+      slack_id: "U07FJG4Q5FW"
+    - name: "Joel Jaimon"
+      slack_id: "U02TQBNL45S"
+    - name: "Kamlesh Chandnani"
+      slack_id: "UNXACUV4Z"
+    - name: "Saurav Rastogi"
+      slack_id: "U014YNNNQ2V"
+    - name: "Ravikumar Rajagopalan"
+      slack_id: "U08S8KH0H41"
+    - name: "Rama Krushna Behera"
+      slack_id: "U03AXB72S0J"
+    - name: "Saurabh Daware"
+      slack_id: "U01F26HJ97Z"
+    - name: "Swapnil KR"
+      slack_id: "U085Z0T5QKB"
+
+  channels:
+    - name: "#experience_fe_core"
+      id: "C01H13RTF8V"
+    - name: "#blade-3-spark"
+      id: ""
+    - name: "#design-system"
+      id: ""
+    - name: "#blade-advocates"
+      id: ""
+
+  workstreams:
+    - "Blade Design System"
+    - "Blade Spark 3.0"
+    - "Agentic Migration"
+    - "Generative UI (GenUI)"
+    - "Microapp Architecture"
+    - "Blade MCP"
+    - "Design Coverage"
+    - "AI/Workshop Initiatives"
+
+report:
+  sections:
+    - highlights
+    - callouts
+    - media_links
+  tone: "confident but not boastful"
+  output_dir: "output/{start_date}_to_{end_date}"

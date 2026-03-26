@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "slack": {
+      "command": "npx",
+      "args": ["-y", "@anthropic/slack-mcp"],
+      "env": {
+        "SLACK_TOKEN": "<your-slack-bot-token>",
+        "SLACK_TEAM_ID": "<your-slack-workspace-id>"
+      }
+    }
+  }
+}
