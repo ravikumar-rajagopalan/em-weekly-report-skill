@@ -21,7 +21,7 @@ Output is a clean markdown file in the repo, ready to copy into your leadership 
 
 ```bash
 # 1. Clone this repo
-git clone git@github.com:razorpay/em-weekly-report-skill.git my-team-reports
+git clone https://github.com/ravikumar-rajagopalan/em-weekly-report-skill.git my-team-reports
 cd my-team-reports
 
 # 2. Configure MCP servers
